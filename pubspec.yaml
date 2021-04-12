@@ -61,6 +61,7 @@ dependencies:
     git:
       url: https://github.com/leoafarias/fvm.git
       ref: master
+  github_trending: ^1.0.0
   # fvm:
   #   path: ../fvm
 

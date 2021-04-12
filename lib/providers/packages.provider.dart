@@ -1,10 +1,11 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:pub_api_client/pub_api_client.dart';
+import 'package:sidekick/dto/package_detail.dto.dart';
 import 'package:sidekick/providers/projects_provider.dart';
 import 'package:sidekick/utils/dependencies.dart';
 
 // ignore: top_level_function_literal_block
-final packagesProvider = FutureProvider((ref) async {
+final packagesProvider = FutureProvider<List<PackageDetail>>((ref) async {
   final projects = ref.watch(projectsProvider.state);
   final packages = <String, int>{};
 
