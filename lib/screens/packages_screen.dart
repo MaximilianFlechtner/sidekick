@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sidekick/screens/packages_scenes/most_used_section.dart';
+import 'package:sidekick/screens/packages_scenes/trending_section.dart';
 
 class PackagesScreen extends StatelessWidget {
   const PackagesScreen({Key key}) : super(key: key);
@@ -22,7 +23,7 @@ class PackagesScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             const MostUsedSection(),
-            Icon(Icons.directions_transit),
+            const TrendingSection(),
             Icon(Icons.directions_bike),
           ],
         ),
